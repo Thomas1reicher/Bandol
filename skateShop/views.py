@@ -8,3 +8,8 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Voici la page principal du skateshop Bandol")
+
+def product(request, variable_a):
+    return HttpResponse("Voici le l'objet " + str(variable_a))
+
+
